@@ -3,38 +3,41 @@
 <head>
 	<title>Contato - Eletro Loja</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-	<table width="100%" bgcolor="blue">
-		<tr>
-			<td  width="25%" align="center" width="25%" ><a href="paginaInicial.html"><font color="white"><img width="100px" src="logo.jpg"></font></a></td>
-			<td align="center" width="25%" ><a href="loja.html"><font color="white">Nossas lojas</font></a></td>
-			<td align="center" width="25%" ><a href="produtos.html"><font color="white">Produtos</font></a></td>
-			<td align="center" width="25%" ><a href="contato.html"><font color="white">Contato</font></a></td>
-		</tr>
-	</table>
-	<h2>Contato</h2>
+	<nav class="menu">
+		<a href="paginaInicial.html"><img src="logo.jpg" alt="Eletro Loja" width="100px"></a>
+		<a href="produtos.html">Produtos</a>
+		<a href="loja.html">Nossas lojas</a>
+		<a href="contato.html">Contato</a>
+
+	</nav>
+	<header>
+		<h2>Contato</h2>
+
+	</header>
 	
 	<hr>
-	<table border="0" width="100%" cellpadding="20">
+	<main>
+		<table id="tabela">
 		<tr>
-			<td width="50%" align="center">
+			<td class="tdcontato" >
 				<img src="email.jpeg" width="40px">
-				<font face="Arial" size="4">contato@eletrolojas.com</font>
+			<p class="tabelacontato">contato@eletrolojas.com</p>
 
 			</td>
 
-			<td width="50%" align="center">
+			<td class="tdcontato" >
 				<img src="whatsapp.jpeg" width="40px">
-				<font face="Arial" size="4">(11)94532-5487</font>
+				<p class="tabelacontato">(11)94532-5487</p>
 
 			</td>
 		</tr>
 		
 
 	</table><br><br>
-	<h3 align="center" ><font color="red">Formas de pagamento</font></h3>
-	<img src="pagamentos.jpg">
+	
 	<form>
 		<label>Nome</label>
 		<input type="text" name="nome">
@@ -46,5 +49,12 @@
 		<input type="submit" value="Enviar">
 
 	</form>
+	</main>
+	
+	<footer id="rodape">
+		<p id="formasdepagamento"><b>Formas de pagamento<b/></p>
+		<img src="pagamentos.jpg"> 
+		<p>	&copy; Recode Pro</p>
+	</footer>
 </body>
 </html>
