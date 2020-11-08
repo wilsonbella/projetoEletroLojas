@@ -1,142 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Produtos - Eletro Lojas</title>
+	<title>Contato</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="funcoes.js" ></script>
 	
 </head>
 <body>
-	<nav class="menu">
-		<a href="paginaInicial.html"><img src="logo.jpg" alt="Eletro Loja" width="100px"></a>
-		<a href="produtos.html">Produtos</a>
-		<a href="loja.html">Nossas lojas</a>
-		<a href="contato.html">Contato</a>
+	<div class="container-fluid">
 
-	</nav>
-	<header>
-		<h2>Produtos</h2>
-	</header>
-	
-	<hr>
+		<nav class="nav justify-content-center bg-info">
+			<a class="nav-link active" href="paginaInicial.html"><img src="logo.jpg" alt="Eletro Loja" width="100px" onmouseover="mudarCorFundo('nav')"></a>
+			<a class="nav-link text-white" href="produtos.html">Produtos</a>
+			<a class="nav-link text-white" href="loja.html">Nossas Lojas</a>
+			<a class="nav-link text-white" href="contato.html">Contato</a>
+			
+		</nav>
+		<header>
+		<h2 class="text-center">Produtos</h2>
+		</header>
 
-	<main>
-		<aside>
-			<h3>Categorias</h3>
-			<ol>
-				<li onclick="mostrarTodos('todos')">Todos(11)</li>
-				<li onclick="mostrarCategoria('geladeira')">Geladeiras(4)</li>
-				<li onclick="mostrarCategoria('microondas')">Microondas(3)</li>
-				<li onclick="mostrarCategoria('fogao')">Fogões(2)</li>
-				<li onclick="mostrarCategoria('maquinaDeLavar')">Máquina de lavar(2)</li>
+		<hr>
 
-			</ol>
-		</aside>
+		<main>
+			<aside>
+				<h3>Categorias</h3>
+				<ol>
+					<li onclick="mostrarTodos('todos')">Todos(11)</li>
+					<li onclick="mostrarCategoria('geladeira')">Geladeiras(4)</li>
+					<li onclick="mostrarCategoria('microondas')">Microondas(3)</li>
+					<li onclick="mostrarCategoria('fogao')">Fogões(2)</li>
+					<li onclick="mostrarCategoria('maquinaDeLavar')">Máquina de lavar(2)</li>
 
-	</section>
-	<h1 id="titulo" onmouseover="mudarCor('titulo')">Nossos Produtos</h1><br><br>
-	<section class="produtos">
-		<div class="container">
-			<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
+				</ol>
+			</aside>
 
-				<img src="geladeira1.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
-				<p class="descricao">Geladeira frost free</p>
-				<p class="descricao"><strike>R$5.000,00</strike></p>
-				<p class="preco">R$4.500,00</p><br>
-				<hr>
-			</div>
+		</section>
+		<h1 class="text-center" id="titulo" onmouseover="mudarCor('titulo')">Nossos Produtos</h1><br><br>
+		<section class="produtos">
+			<div class="container">
+				<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
 
-			<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
-				<img src="geladeira1.jpg" width="120px"  onclick="aumentarImagem(this)">
-				<p class="descricao">Geladeira cinza</p>
-				<p class="descricao"><strike>R$6.500,00</strike></p>
-				<p class="preco">R$5.200,00</p><br>
-				<hr>
-			</div >
+					<img src="geladeira1.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
+					<p class="descricao">Geladeira frost free</p>
+					<p  class="text-danger" class="descricao"><strike>R$5.000,00</strike></p>
+					<p class="preco">R$4.500,00</p><br>
+					<hr>
+				</div>
 
-			<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
-				<img src="geladeira3.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
-				<p class="descricao">Geladeira Branca</p>
-				<p class="descricao"><strike>R$5.000,00</strike></p>
-				<p class="preco">R$4.500,00</p><br>
-				<hr>
-			</div>
-			<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
+				<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
+					<img src="geladeira2.jpeg" width="120px"  onclick="aumentarImagem(this)">
+					<p class="descricao">Geladeira cinza</p>
+					<p class="text-danger" class="descricao"><strike>R$6.500,00</strike></p>
+					<p class="preco">R$5.200,00</p><br>
+					<hr>
+				</div >
 
-				<img src="geladeira4.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
-				<p class="descricao">Mini Geladeira frost free</p>
-				<p class="descricao"><strike>R$3.000,00</strike></p>
-				<p class="preco">R$2.500,00</p><br>
-				<hr>
-			</div>
+				<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
+					<img src="geladeira3.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
+					<p class="descricao">Geladeira Branca</p>
+					<p class="text-danger" class="descricao"><strike>R$5.000,00</strike></p>
+					<p class="preco">R$4.500,00</p><br>
+					<hr>
+				</div>
+				<div class="caixaproduto" id="geladeira" style="display: inline-block;" >
+
+					<img src="geladeira4.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
+					<p class="descricao">Mini Geladeira frost free</p>
+					<p class="text-danger" class="descricao"><strike>R$3.000,00</strike></p>
+					<p class="preco">R$2.500,00</p><br>
+					<hr>
+				</div>
 
 
-			<div class="caixaproduto" id="microondas" style="display: inline-block;" >
-				<img src="microondas1.jpg" width="120px" onclick="aumentarImagem(this)">
-				<p class="descricao">Microondas Elegante</p>
-				<p class="descricao"><strike>R$3.000,00</strike></p>
-				<p class="preco">R$2.500,00</p><br>
-				<hr>
-			</div >
+				<div class="caixaproduto" id="microondas" style="display: inline-block;" >
+					<img src="microondas1.jpg" width="120px" onclick="aumentarImagem(this)">
+					<p class="descricao">Microondas Elegante</p>
+					<p class="text-danger" class="descricao"><strike>R$3.000,00</strike></p>
+					<p class="preco">R$2.500,00</p><br>
+					<hr>
+				</div >
 
-			<div class="caixaproduto" id="microondas" style="display: inline-block;" >
-				<img src="microondas2.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
-				<p class="descricao">Microondas Compacto</p>
-				<p class="descricao"><strike>R$2.000,00</strike></p>
-				<p class="preco">R$1.500,00</p><br>
-				<hr>
-			</div>
-			<div class="caixaproduto" id="microondas" style="display: inline-block;" >
-				<img src="microondas3.jpg" width="120px"  onclick="aumentarImagem(this)">
-				<p class="descricao">Microondas Branco</p>
-				<p class="descricao"><strike>R$3.500,00</strike></p>
-				<p class="preco">R$3.200,00</p><br>
-				<hr>
-			</div >
+				<div class="caixaproduto" id="microondas" style="display: inline-block;" >
+					<img src="microondas2.jpg" width="120px"  onclick="aumentarImagem(this)"><br>
+					<p class="descricao">Microondas Compacto</p>
+					<p class="text-danger" class="descricao"><strike>R$2.000,00</strike></p>
+					<p class="preco">R$1.500,00</p><br>
+					<hr>
+				</div>
+				<div class="caixaproduto" id="microondas" style="display: inline-block;" >
+					<img src="microondas3.jpg" width="120px"  onclick="aumentarImagem(this)">
+					<p class="descricao">Microondas Branco</p>
+					<p class="text-danger" class="descricao"><strike>R$3.500,00</strike></p>
+					<p class="preco">R$3.200,00</p><br>
+					<hr>
+				</div >
 
-			<div class="caixaproduto" id="fogao" style="display: inline-block;" >
-				<img src="fogao1.jpg" width="120px" onclick="aumentarImagem(this)">
-				<p class="descricao">Fogão Pequeno</p>
-				<p class="descricao"><strike>R$1.000,00</strike></p>
-				<p class="preco">R$500,00</p><br>
-				<hr>
-			</div >
+				<div class="caixaproduto" id="fogao" style="display: inline-block;" >
+					<img src="fogao1.jpg" width="120px" onclick="aumentarImagem(this)">
+					<p class="descricao">Fogão Pequeno</p>
+					<p class="text-danger" class="descricao"><strike>R$1.000,00</strike></p>
+					<p class="preco">R$500,00</p><br>
+					<hr>
+				</div >
 
-			<div class="caixaproduto" id="fogao" style="display: inline-block;" >
-				<img src="fogao2.jpg" width="120px" onclick="aumentarImagem(this)">
-				<p class="descricao">Fogão Branco</p>
-				<p class="descricao"><strike>R$2.000,00</strike></p>
-				<p class="preco">R$1.500,00</p><br>
-				<hr>
-			</div >
+				<div class="caixaproduto" id="fogao" style="display: inline-block;" >
+					<img src="fogao2.jpg" width="120px" onclick="aumentarImagem(this)">
+					<p class="descricao">Fogão Branco</p>
+					<p class="text-danger" class="descricao"><strike>R$2.000,00</strike></p>
+					<p class="preco">R$1.500,00</p><br>
+					<hr>
+				</div >
 
-			<div class="caixaproduto" id="maquinaDeLavar" style="display:inline-block;" >
-				<img src="maquinaDeLavar1.jpg" width="120px" onclick="aumentarImagem(this)">
-				<p class="descricao">Maquina de Lavar Pop</p>
-				<p class="descricao"><strike>R$7.000,00</strike></p>
-				<p class="preco">R$5.500,00</p><br>
-				<hr>
-			</div >
+				<div class="caixaproduto" id="maquinaDeLavar" style="display:inline-block;" >
+					<img src="maquinaDeLavar1.jpg" width="120px" onclick="aumentarImagem(this)">
+					<p class="descricao">Maquina de Lavar Pop</p>
+					<p class="text-danger" class="descricao"><strike>R$7.000,00</strike></p>
+					<p class="preco">R$5.500,00</p><br>
+					<hr>
+				</div >
 
-			<div class="caixaproduto" id="maquinaDeLavar" style="display: inline-block;" >
-				<img src="maquinaDeLavar2.jpg" width="120px" onclick="aumentarImagem(this)">
-				<p class="descricao">Maquina de Lavar Luxo</p>
-				<p class="descricao"><strike>R$10.000,00</strike></p>
-				<p class="preco">R$8.500,00</p><br>
-				<hr>
-			</div >
-		</div>	
+				<div class="caixaproduto" id="maquinaDeLavar" style="display: inline-block;" >
+					<img src="maquinaDeLavar2.jpg" width="120px" onclick="aumentarImagem(this)">
+					<p class="descricao">Maquina de Lavar Luxo</p>
+					<p class="text-danger" class="descricao"><strike>R$10.000,00</strike></p>
+					<p class="preco">R$8.500,00</p><br>
+					<hr>
+				</div >
+			</div>	
 
-	</section>
+		</section>
 
-</main>
+	</main>
 
-<br><br>
-<footer id="rodape">
-	<p id="formasdepagamento"><b>Formas de pagamento<b/></p>
-	<img src="pagamentos.jpg"> 
-	<p>	&copy; Eletro Lojas </p>
+	<br><br>
+	<footer id="rodape">
+		<p class="text-center text-success" id="formasdepagamento"><b>Formas de pagamento<b/></p>
+		<img class="img-responsive" src="forma_de_pagamento.png">  
+		<p class="text-center">	&copy; Eletro Lojas </p>
+	</div>
 </footer>
 </body>
 </html>
