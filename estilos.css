@@ -1,0 +1,135 @@
+img {
+ vertical-align: center;
+
+}
+
+p {
+	color: green; 
+	font-family: Arial, Helvetica,sans-serif;
+}
+
+#formasdepagamento{
+
+	color: red;
+	
+}
+h2 {
+	color: black;
+	font-family: fantasy;
+}
+
+#titulo {
+	text-align: center;
+	margin: auto;
+
+}
+
+.menu {
+	background-color: #000080;
+	text-align: center;
+	vertical-align: center;
+	padding: 20px;
+
+
+
+
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-flex;
+	width: 24%;
+
+
+}
+.menu img {
+	width: 120px;
+	vertical-align: left;
+	align-content: left;
+}
+
+#rodape {
+	text-align: center;
+}
+.categoria {
+	width: 20%;
+	vertical-align: top;
+
+}
+.descricao{
+
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+}
+.preco {
+	color:black;
+	font-family: Arial;
+	font-size: 20px;
+}
+.produtos {
+	height: 100%;
+	width: 100%;
+	font-size: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+
+}
+.caixaproduto {
+	display: inline-block;
+	width: 20%;
+	font-size: small;
+	text-align: center;
+	margin: 0 2.5% 0;
+	
+}
+
+.tabelacontato {
+	font-size: 6;
+	font-family: Arial,Helvetica,sans-serif;
+	color: black; 
+}
+#tabela {
+	border: none;
+	width: 100%;
+	cellpadding :20;
+
+}
+.tdcontato {
+	width: 50%;
+	vertical-align: center;
+	text-align: center;
+
+}
+.loja {
+	width: 29.5%;
+	padding: 25px;
+	display: inline-block;
+	border: auto;
+
+}
+div{
+    vertical-align: bottom;
+}
+
+div.produtos{
+    display: inline-block;
+    width: 20%;
+    font-size: small;
+    text-align: center;
+    margin: 0 2.5% 0;
+}
+
+div.container{
+    display: inline-block;
+    width: 80%;
+}
+
+aside{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    font-size: small;   
+}
