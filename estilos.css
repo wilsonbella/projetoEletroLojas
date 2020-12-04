@@ -133,3 +133,35 @@ aside{
     vertical-align: top;
     font-size: small;   
 }
+ .w-5{
+    width: 5%;
+}
+
+.list-item{
+    cursor: pointer;
+}
+
+.div-height{
+    height: 200px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height:100%;
+    position:relative;
+}
+
+main{
+    padding-bottom: 150px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+footer img{
+    height: 4em;
