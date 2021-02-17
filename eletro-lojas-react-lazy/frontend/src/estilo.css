@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img {
+  width: 150px;
+}
+
+.foto img {
+  border-radius: 30px;
+}
+
+.categorias li {
+  cursor: pointer;
+}
+
+.box_produto {
+  width: 250px;
+  display: inline-block;
+}
+
+.box_produto img {
+  width: 120px;
+}
+
+.preco_antigo {
+  font-size: 13px;
+  margin-bottom: 0rem;
+}
+
+#rodape {
+  color: white;
+}
